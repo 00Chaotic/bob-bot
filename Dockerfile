@@ -8,4 +8,5 @@ RUN chmod u+x ./scripts/setup.sh && ./scripts/setup.sh
 
 COPY . .
 
+RUN ["node", "src/register-commands.js"]
 CMD ["node", "."]
